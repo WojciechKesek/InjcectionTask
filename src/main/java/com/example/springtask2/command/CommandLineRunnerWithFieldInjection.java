@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CommandLineRunnerWithFieldInjection implements CommandLineRunner {
     @Autowired
-    DummyLogger logger;
+    private DummyLogger logger;
     @Override
     public void run(String... args) throws Exception {
         logger.Hello();

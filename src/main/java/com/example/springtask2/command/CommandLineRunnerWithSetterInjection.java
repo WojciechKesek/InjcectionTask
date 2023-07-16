@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class CommandLineRunnerWithSetterInjection implements CommandLineRunner {
-    DummyLogger logger;
+    private DummyLogger logger;
     @Autowired
     public void setLogger(DummyLogger logger) {
         this.logger = logger;
